@@ -1,0 +1,51 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+body{
+    font-family: 'Press Start 2P', cursive;
+    background-color: #007DFF;
+    overflow-x: hidden;
+}
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: #007DFF;
+    z-index: 1001;
+}
+
+.preloader__image {
+    position: relative;
+    width: 312px;
+    height: 312px;
+    top: 30%;
+    margin: auto;
+    background: url('../img/sonic.gif') no-repeat 50% 50%; /*расположение (url) изображения gif и др. параметры*/
+}
+.header_button{
+    width: 160px;
+    height: 40px;
+
+}
+
+
+.loaded .preloader {
+    display: none;
+}
+
+.shadowmy{
+    box-shadow: 0px 0px 25px 14px rgba(34, 60, 80, 0.64);
+}
+.shadowbutton{
+    box-shadow: 2.27288px 3.78813px 3.78813px rgba(0, 0, 0, 0.4);
+}
